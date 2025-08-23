@@ -35,8 +35,8 @@ export default function HeroSection() {
     {
       name: "Web Development",
       icon: <Code className="h-5 w-5" />,
-      discription:
-        "Building responsive, scalable, and user-friendly web applications using modern frameworks, clean architecture, and best practices.",
+      description:
+        "Building responsive and user-friendly web applications using modern frameworks and best practices.",
     },
     {
       name: "Generative AI",
@@ -45,10 +45,10 @@ export default function HeroSection() {
         "Creating innovative and intelligent solutions using generative AI techniques and tools.",
     },
     {
-      name: "Competitive Programming",
+      name: "Programming",
       icon: <Code className="h-5 w-5" />,
       discription:
-        "Strong foundation in algorithms and data structures with proven problem-solving skills through competitive programming challenges",
+        "Strong foundation in algorithms and data structures with proven problem-solving skills through competitive programming",
     },
   ];
 
@@ -218,7 +218,7 @@ export default function HeroSection() {
               Shivam Saxena
             </h3>
             <p className="text-center text-foreground/60 text-sm relative z-10">
-              Fullstack Developer
+              Electrical Engineering
             </p>
             <div className="mt-3 flex items-center gap-2 relative z-10">
               <div className="rounded-full bg-primary/10 p-1.5 text-primary">
@@ -292,10 +292,11 @@ export default function HeroSection() {
               <div className="rounded-full bg-primary/10 p-2 text-primary">
                 <GraduationCap className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold">Education</h3>
+              <h3 className="text-lg font-semibold">Machine Learning</h3>
             </div>
             <p className="text-foreground/70 text-sm relative z-10">
-              Sophomore at Indian Institute of Technology, Bhubaneswar
+              Exploring the intersection of computer science and artificial
+              intelligence.
             </p>
           </motion.div>
         </div>

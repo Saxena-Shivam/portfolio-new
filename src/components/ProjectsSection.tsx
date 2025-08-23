@@ -3,16 +3,16 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import styles from "@/styles/CustomScrollbar.module.css";
-import gandeeva from "../assets/images/gandeeva.png";
+import acadsync from "../assets/images/acadsync.png";
 import plantainTree from "../assets/images/plantaintreeventures.png";
-import tshirt from "../assets/images/tshirt3d.png";
-import windows from "../assets/images/windowsretro.png";
-import cards from "../assets/images/parallaxcard.png";
-import parallexus from "../assets/images/parallexus.png";
-import packx from "../assets/images/packx.png";
-import breakfast from "../assets/images/breakfastbuddy.png";
-import arcPortal from "../assets/images/our ARC img.png";
-import bilva from "../assets/images/Bilva-ss.png";
+import grocto from "../assets/images/grocto.png";
+import message_app from "../assets/images/message_app.png";
+import college from "../assets/images/college.png";
+// import parallexus from "../assets/images/parallexus.png";
+// import packx from "../assets/images/packx.png";
+// import breakfast from "../assets/images/breakfastbuddy.png";
+// import arcPortal from "../assets/images/our ARC img.png";
+// import bilva from "../assets/images/Bilva-ss.png";
 interface Project {
   id: number;
   title: string;
@@ -31,11 +31,11 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "AI-Powered Personalized Study Planner",
+    title: "AcadSync",
     description:
       "An intelligent platform that generates adaptive study schedules and AI-based question papers.",
     longDescription:
-      "The AI-Powered Personalized Study Planner is designed to transform academic preparation. It combines adaptive scheduling, performance analysis, and smart question generation to help students prepare more effectively. The system dynamically allocates study hours based on topic weightage, difficulty, and past performance using an Exponential Moving Average (EMA) algorithm. It also generates question papers, balancing objective and descriptive questions, ensuring personalized practice for every student. The platform includes dedicated portals for students, teachers, and admins built using modern web technologies.",
+      "AcadSync is designed to transform academic preparation. It combines adaptive scheduling, performance analysis, and smart question generation to help students prepare more effectively. The system dynamically allocates study hours based on topic weightage, difficulty, and past performance using an Exponential Moving Average (EMA) algorithm. It also generates question papers, balancing objective and descriptive questions, ensuring personalized practice for every student. The platform includes dedicated portals for students, teachers, and admins built using modern web technologies.",
     features: [
       "Exam & syllabus selection with chapter-level details",
       "Time availability input and AI-based time distribution",
@@ -53,9 +53,9 @@ const projects: Project[] = [
       { name: "Python", percentage: 15 },
       { name: "AI APIs", percentage: 10 },
     ],
-    image: gandeeva,
+    image: acadsync,
     tags: ["TypeScript", "MongoDB", "Streamlit", "Python", "AI APIs"],
-    demoLink: "#",
+    demoLink: "https://arc-front.onrender.com",
     githubLink: "#",
     featured: true,
     inBuild: true,
@@ -87,9 +87,9 @@ const projects: Project[] = [
       { name: "SQLite", percentage: 10 },
       { name: "JWT Authentication", percentage: 5 },
     ],
-    image: plantainTree,
+    image: grocto,
     tags: ["React", "Vite", "Flask", "PostgreSQL", "SQLite", "JWT"],
-    demoLink: "#",
+    demoLink: "https://grocto-frontend.onrender.com/",
     githubLink: "#",
     featured: true,
   },
@@ -117,7 +117,7 @@ const projects: Project[] = [
       { name: "MongoDB", percentage: 20 },
       { name: "Node-cron & Nodemailer", percentage: 10 },
     ],
-    image: plantainTree,
+    image: message_app,
     tags: [
       "React",
       "Tailwind CSS",
@@ -126,7 +126,7 @@ const projects: Project[] = [
       "JWT",
       "Nodemailer",
     ],
-    demoLink: "#",
+    demoLink: "https://arc-woad-kappa.vercel.app/home",
     githubLink: "#",
     featured: false,
   },
@@ -156,7 +156,7 @@ const projects: Project[] = [
       { name: "Bootstrap/HTML/CSS", percentage: 15 },
     ],
 
-    image: plantainTree,
+    image: college,
     tags: [
       "Express.js",
       "Node.js",
@@ -168,7 +168,8 @@ const projects: Project[] = [
       "HTML",
       "CSS",
     ],
-    demoLink: "#",
+    demoLink:
+      "https://aashish-kumar-singh1-git-master-hello-college.vercel.app/",
     githubLink: "#",
     featured: false,
   },

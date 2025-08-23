@@ -43,7 +43,7 @@ export default function ContactSection() {
     // Initialize EmailJS with your User ID
     // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key from https://dashboard.emailjs.com/admin/account
     emailjs.init({
-      publicKey: "dwfUUMMXly0EXYLPP",
+      publicKey: "0xABDB0uHYqpCDpJD",
     });
   }, []);
 
@@ -55,7 +55,7 @@ export default function ContactSection() {
     // Map form field names to state properties
     const fieldMap: Record<string, string> = {
       user_name: "name",
-      user_email: "email",
+      email: "email",
       message: "message",
     };
 
@@ -75,11 +75,11 @@ export default function ContactSection() {
       // Send email using EmailJS
       // Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
       const result = await emailjs.sendForm(
-        "service_4fkn5va",
-        "template_6spgsog",
+        "service_6729h9m",
+        "template_higtmf7",
         formRef.current as HTMLFormElement,
         {
-          publicKey: "dwfUUMMXly0EXYLPP", // Use the same public key as in the init method
+          publicKey: "0xABDB0uHYqpCDpJD", // Use the same public key as in the init method
         }
       );
 
@@ -249,7 +249,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       id="name"
-                      name="user_name"
+                      name="name"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -267,7 +267,7 @@ export default function ContactSection() {
                     <input
                       type="email"
                       id="email"
-                      name="user_email"
+                      name="email"
                       value={formData.email}
                       onChange={handleChange}
                       required

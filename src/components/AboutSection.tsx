@@ -7,31 +7,38 @@ export default function AboutSection() {
   const isInView = useInView(titleRef, { once: true, margin: "-100px" });
 
   const experiences = [
+    // {
+    //   title: "Fullstack Developer",
+    //   company: "SCMNOW",
+    //   period: "2024 - Present",
+    //   icon: <Briefcase className="h-5 w-5" />,
+    //   description:
+    //     "Started as an intern and transitioned to full-time developer role.",
+    //   type: "experience",
+    // },
     {
-      title: "Fullstack Developer",
-      company: "SCMNOW",
-      period: "2024 - Present",
-      icon: <Briefcase className="h-5 w-5" />,
-      description:
-        "Started as an intern and transitioned to full-time developer role.",
-      type: "experience",
-    },
-    {
-      title: "Part-time Developer & Internships",
-      company: "Various Companies",
-      period: "2023 - 2024",
+      title: "Part-time Developer",
+      company: "AcadSync",
+      period: "May 2025 - July 2025",
       icon: <Code className="h-5 w-5" />,
       description:
-        "Gained practical experience through multiple internships and part-time development roles while completing my studies.",
+        "Gained practical experience through part-time development roles in Generative AI and Web Development.",
       type: "experience",
     },
     {
-      title: "Computer Science Degree",
-      company: "University",
-      period: "2020 - 2024",
+      title: "Electrical Engineering",
+      company: "Indian Institute of Technology, Bhubaneswar",
+      period: "2025 - 2028",
       icon: <GraduationCap className="h-5 w-5" />,
-      description:
-        "Bachelor's degree in Computer Science with focus on software development.",
+      description: "Started a new journey with new challenges.",
+      type: "education",
+    },
+    {
+      title: "Computer Science Engineering",
+      company: "National Institute of Technology, Patna",
+      period: "2024 - 2025",
+      icon: <GraduationCap className="h-5 w-5" />,
+      description: "A start to my career in technology and engineering.",
       type: "education",
     },
   ];
@@ -57,19 +64,22 @@ export default function AboutSection() {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a passionate frontend developer and UI designer with a strong
-              focus on creating intuitive and beautiful user experiences. With
-              over 1.5 years of experience in the industry, I've worked on a
-              wide range of projects from small business websites to large
-              enterprise applications.
+              I’m an undergraduate student at IIT Bhubaneswar pursuing
+              Electrical Engineering. I started my programming journey with C
+              and C++, where I discovered my love for algorithms and data
+              structures. As I grew, web development became my next big
+              passion—I explored JavaScript, backend technologies like Node.js,
+              and built responsive, user-friendly websites using Bootstrap and
+              Express.js.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My expertise includes modern JavaScript frameworks like React,
-              along with CSS preprocessors and design systems. I'm also
-              proficient with MongoDB for database management and Cloudflare R2
-              for object storage solutions. I believe in writing clean,
-              maintainable code and creating accessible interfaces that work for
-              everyone.
+              Later, I ventured into AI-powered projects, creating solutions
+              such as automated question paper generators, personalized study
+              planners, and AI-based answer checkers, as well as adaptive
+              learning systems leveraging real student performance data. These
+              experiences strengthened my skills in Python, MongoDB, Streamlit,
+              and AI APIs, and fueled my goal of solving real-world challenges
+              through technology.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               When I'm not coding, you can find me exploring new design trends,

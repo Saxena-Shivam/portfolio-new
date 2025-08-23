@@ -114,19 +114,19 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      value: "nandyala.akhil@hotmail.com",
-      href: "mailto:nandyala.akhil@hotmail.com",
+      value: "shivamsaxena562006@gmail.com",
+      href: "mailto:shivamsaxena562006@gmail.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone",
-      value: "+91 6303945132",
-      href: "tel:+916303945132",
+      value: "+91 9507250528",
+      href: "tel:+919507250528",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Location",
-      value: "Hyderabad, Telangana, India",
+      value: "Bhubaneswar, Odisha, India",
     },
   ];
 
@@ -175,7 +175,7 @@ export default function ContactSection() {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Saxena-Shivam"
                 className="p-3 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-colors duration-300 hover-scale-icon"
               >
                 <svg
@@ -194,7 +194,7 @@ export default function ContactSection() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/shivam-saxena-aa8754289/"
                 className="p-3 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-colors duration-300 hover-scale-icon"
               >
                 <svg
@@ -214,7 +214,7 @@ export default function ContactSection() {
                 </svg>
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://twitter.com/Shivam562006"
                 className="p-3 rounded-full bg-secondary text-primary hover:bg-primary hover:text-white transition-colors duration-300 hover-scale-icon"
               >
                 <svg

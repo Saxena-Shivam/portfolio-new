@@ -19,14 +19,37 @@ import {
   SiFigma,
   SiRedis,
   SiCanva,
+  SiTailwindcss,
+  SiCplusplus,
+  SiC,
+  SiJavascript,
+  SiNextdotjs,
+  SiExpress,
+  SiMysql,
+  SiReactivex,
 } from "react-icons/si";
-import profileImage from "../assets/images/Akhil pic linkedin.jpg";
+import profileImage from "../assets/images/profile1.jpg";
 
 export default function HeroSection() {
   const mainSkills = [
-    { name: "Web Development", icon: <Code className="h-5 w-5" /> },
-    { name: "UI/UX Design", icon: <Image className="h-5 w-5" /> },
-    { name: "Communication", icon: <MessageSquare className="h-5 w-5" /> },
+    {
+      name: "Web Development",
+      icon: <Code className="h-5 w-5" />,
+      discription:
+        "Building responsive, scalable, and user-friendly web applications using modern frameworks, clean architecture, and best practices.",
+    },
+    {
+      name: "Generative AI",
+      icon: <Image className="h-5 w-5" />,
+      description:
+        "Creating innovative and intelligent solutions using generative AI techniques and tools.",
+    },
+    {
+      name: "Competitive Programming",
+      icon: <Code className="h-5 w-5" />,
+      discription:
+        "Strong foundation in algorithms and data structures with proven problem-solving skills through competitive programming challenges",
+    },
   ];
 
   const techStack = [
@@ -34,15 +57,20 @@ export default function HeroSection() {
     { name: "React", icon: <SiReact className="h-6 w-6" /> },
     { name: "Node.js", icon: <SiNodedotjs className="h-6 w-6" /> },
     { name: "MongoDB", icon: <SiMongodb className="h-6 w-6" /> },
-    { name: "Cloudflare", icon: <SiCloudflare className="h-6 w-6" /> },
+    // { name: "Cloudflare", icon: <SiCloudflare className="h-6 w-6" /> },
     { name: "TypeScript", icon: <SiTypescript className="h-6 w-6" /> },
-    { name: "Redis", icon: <SiRedis className="h-6 w-6" /> },
-    { name: "Figma", icon: <SiFigma className="h-6 w-6" /> },
-    { name: "Canva", icon: <SiCanva className="h-6 w-6" /> },
+    // { name: "Redis", icon: <SiRedis className="h-6 w-6" /> },
+    { name: "Tailwind", icon: <SiTailwindcss className="h-6 w-6" /> },
+    { name: "C++", icon: <SiCplusplus className="h-6 w-6" /> },
+    { name: "C", icon: <SiC className="h-6 w-6" /> },
+    { name: "JavaScript", icon: <SiJavascript className="h-6 w-6" /> },
+    { name: "Reactivex", icon: <SiReactivex className="h-6 w-6" /> },
+    { name: "Express", icon: <SiExpress className="h-6 w-6" /> },
+    { name: "MySQL", icon: <SiMysql className="h-6 w-6" /> },
   ];
 
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Akhil Nandyala";
+  const fullText = "Shivam Saxena";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
 
@@ -71,8 +99,8 @@ export default function HeroSection() {
     try {
       if (navigator.share) {
         await navigator.share({
-          title: "Akhil Nandyala - Portfolio",
-          text: "Check out Akhil Nandyala's portfolio website!",
+          title: "Shivam Saxena - Portfolio",
+          text: "Check out Shivam Saxena's portfolio website!",
           url: window.location.href,
         });
       } else {
@@ -121,7 +149,7 @@ export default function HeroSection() {
                 </span>
               </h1>
               <h2 className="text-xl md:text-2xl text-foreground/80 mb-6">
-                Fullstack Developer & UI Designer
+                Fullstack Developer
               </h2>
               <p className="text-foreground/70 mb-8 leading-relaxed max-w-xl">
                 I create stunning digital experiences with a focus on scalable
@@ -145,7 +173,7 @@ export default function HeroSection() {
 
                 {/* Fixed Resume button with inline-flex to ensure horizontal alignment */}
                 <a
-                  href="/AKHIL NANDYALA RESUME.pdf"
+                  href="/Shivam_RESUME.pdf"
                   download
                   className="scroll-link group px-6 py-3 bg-secondary text-foreground font-medium rounded-full hover:bg-secondary/70 transition-all duration-300 relative overflow-hidden inline-flex items-center gap-2"
                 >
@@ -187,17 +215,17 @@ export default function HeroSection() {
               />
             </motion.div>
             <h3 className="text-xl font-semibold text-center relative z-10">
-              Akhil Nandyala
+              Shivam Saxena
             </h3>
             <p className="text-center text-foreground/60 text-sm relative z-10">
               Fullstack Developer
             </p>
             <div className="mt-3 flex items-center gap-2 relative z-10">
               <div className="rounded-full bg-primary/10 p-1.5 text-primary">
-                <Briefcase className="h-4 w-4" />
+                <GraduationCap className="h-4 w-4" />
               </div>
               <span className="text-sm text-foreground/70">
-                1.5+ years experience
+                IIT Bhubaneswar - Sophomore
               </span>
             </div>
           </motion.div>
@@ -247,8 +275,7 @@ export default function HeroSection() {
                 <h3 className="text-lg font-semibold">{skill.name}</h3>
               </div>
               <p className="text-foreground/70 text-sm relative z-10">
-                Expertise in {skill.name.toLowerCase()} with modern technologies
-                and best practices
+                {skill.discription || skill.description}
               </p>
             </motion.div>
           ))}
@@ -268,7 +295,7 @@ export default function HeroSection() {
               <h3 className="text-lg font-semibold">Education</h3>
             </div>
             <p className="text-foreground/70 text-sm relative z-10">
-              Computer Science degree with focus on software engineering
+              Sophomore at Indian Institute of Technology, Bhubaneswar
             </p>
           </motion.div>
         </div>

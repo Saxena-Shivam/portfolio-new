@@ -8,10 +8,10 @@ import plantainTree from "../assets/images/plantaintreeventures.png";
 import grocto from "../assets/images/grocto.png";
 import message_app from "../assets/images/message_app.png";
 import college from "../assets/images/college.png";
-// import parallexus from "../assets/images/parallexus.png";
-// import packx from "../assets/images/packx.png";
-// import breakfast from "../assets/images/breakfastbuddy.png";
-// import arcPortal from "../assets/images/our ARC img.png";
+import airbnb from "../assets/images/airbnb.png";
+import jrm from "../assets/images/jrm.png";
+import planner from "../assets/images/planner.png";
+import questionGenerator from "../assets/images/questionGenerator.png";
 // import bilva from "../assets/images/Bilva-ss.png";
 interface Project {
   id: number;
@@ -215,42 +215,135 @@ const projects: Project[] = [
       { name: "JWT Authentication", percentage: 10 },
       { name: "bcrypt.js", percentage: 10 },
     ],
-    image: plantainTree,
+    image: airbnb,
     tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "JWT", "bcrypt.js"],
     demoLink: "#",
     githubLink: "#",
     featured: false,
   },
-  // {
-  //   id: 6,
-  //   title: "Windows XP Retro Experience",
-  //   description:
-  //     "A nostalgic recreation of the Windows XP interface built using React, complete with functioning desktop, start menu, and classic applications.",
-  //   image: windows,
-  //   tags: ["React", "CSS", "JavaScript", "Retro UI"],
-  //   demoLink: "https://akswindowsxp.netlify.app/",
-  //   githubLink: "#",
-  // },
-  // {
-  //   id: 7,
-  //   title: "Breakfast Buddy",
-  //   description:
-  //     "A website for a breakfast restaurant that allows users to view the Products, and Contact the restaurant for orders.",
-  //   image: breakfast,
-  //   tags: ["React", "Tailwind CSS"],
-  //   demoLink: "https://www.breakfastbuddy.in/",
-  //   githubLink: "#",
-  // },
-  // {
-  //   id: 8,
-  //   title: "3D Parallax Cards",
-  //   description:
-  //     "An immersive collection of interactive 3D cards with parallax effects that respond to mouse movement, creating depth and dimension.",
-  //   image: cards,
-  //   tags: ["React", "CSS", "3D Effects", "Parallax"],
-  //   demoLink: "https://akscards.netlify.app/",
-  //   githubLink: "#",
-  // },
+  {
+    id: 6,
+    title: "Journey Risk Management System",
+    description:
+      "A web-based application designed to display, search, and manage route risk information between IOCL terminals and destinations with clear visibility of risk levels and route details.",
+    longDescription:
+      "The Journey Risk Management System (JRM) is a professional web platform developed to help IOCL monitor and manage transportation routes between terminals and destinations. Each route is assigned a risk level (Low, Medium, High), and details such as terminal names, destination IDs, and facilities (e.g., petrol pumps) are displayed. The system includes search and filter features, route tracking, bilingual support (Hindi/English), and a responsive modern UI. It is designed for scalability and compliance with IOCL data policies.",
+    features: [
+      "Search and filter system with Terminal, Destination, Risk Level, and Status",
+      "Modern responsive UI/UX design",
+      "Bilingual support (Hindi/English)",
+      "Active route status tracking",
+      "Individual HTML pages for each route (Terminal ➝ Destination)",
+      "Secure database-driven content management",
+      "Excel integration for SAP code and destination mapping",
+      "Optional chatbot and voice search support",
+    ],
+    techStack: [
+      { name: "HTML/CSS/Bootstrap", percentage: 20 },
+      { name: "JavaScript/jQuery", percentage: 20 },
+      { name: "Express.js", percentage: 15 },
+      { name: "Node.js", percentage: 15 },
+      { name: "MySQL", percentage: 20 },
+      { name: "AJAX", percentage: 10 },
+    ],
+    image: jrm,
+    tags: [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript",
+      "jQuery",
+      "Express.js",
+      "Node.js",
+      "MySQL",
+      "AJAX",
+    ],
+    demoLink: "#",
+    githubLink: "#",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Personalized Study Planner",
+    description:
+      "An AI-powered study planning tool that generates intelligent, exam-focused timetables based on syllabus, difficulty, weightage, and user performance.",
+    longDescription:
+      "The Personalized Study Planner is a smart web application designed to help students prepare effectively for exams by creating adaptive and balanced study schedules. The system allows students to select their target exam, loads the syllabus with chapter/topic details, and considers user inputs such as available study hours and daily capacity. Each topic is prioritized using a weighted formula that accounts for exam weightage, difficulty, and self-assessed performance. Based on this, the planner distributes available hours intelligently, generating a day-wise timetable that ensures balanced coverage and periodic revision. The final plan is presented in a clean, user-friendly format and can be exported for offline use.",
+    features: [
+      "Exam and syllabus selection with chapter/topic-level detail",
+      "User input for total hours and daily study capacity",
+      "Weighted topic prioritization based on weightage, difficulty, and performance",
+      "AI-powered time distribution using a priority scoring formula",
+      "Cyclic topic rotation ensuring balanced coverage and periodic revision",
+      "Daily planner generation with structured study sessions",
+      "Responsive and intuitive user interface",
+      "Export and download options for offline use",
+    ],
+    techStack: [
+      { name: "Python", percentage: 20 },
+      { name: "Streamlit", percentage: 20 },
+      { name: "MongoDB", percentage: 20 },
+      { name: "OpenAI API", percentage: 15 },
+      { name: "Pandas", percentage: 15 },
+      { name: "NumPy", percentage: 10 },
+    ],
+    image: planner,
+    tags: [
+      "Python",
+      "Streamlit",
+      "MongoDB",
+      "OpenAI API",
+      "Pandas",
+      "NumPy",
+      "AI",
+      "Education Tech",
+    ],
+    demoLink: "https://study-planner-typescript.vercel.app/",
+    githubLink: "#",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "AI-Powered Question Generator",
+    description:
+      "A smart question paper generator that creates balanced sets of MCQs, True/False, Fill in the Blanks, and Descriptive questions using AI and a database-backed system.",
+    longDescription:
+      "The AI-Powered Question Generator is designed to help educators and students create customized question sets efficiently. Users can select class, subject, and chapters, then specify the number of questions for different types (MCQs, Fill in the Blanks, True/False, and Descriptive). The system intelligently generates objective questions using AI based on textbook content stored in the database, while descriptive questions are fetched directly from the database with marks and type. If sufficient questions are unavailable, AI acts as a fallback to generate additional questions. Chapter-wise textbook content is stored in MongoDB, providing the context for AI-based generation. All generated data can be exported to CSV for reuse or offline access. The project ensures error handling, including fixes for division by zero and updated LLM models.",
+    features: [
+      "Class and subject selection (6–10) with chapter-specific filtering",
+      "User-defined question types: MCQ, Fill in the Blanks, True/False, Descriptive",
+      "AI-powered generation of objective questions based on textbook context",
+      "Descriptive questions fetched from database with marks and type",
+      "AI fallback for missing descriptive questions",
+      "Chapter-wise textbook content storage in MongoDB",
+      "Auto-push of AI-generated descriptive questions to database",
+      "Export of generated question sets to CSV",
+      "Error handling and stable model integration",
+    ],
+    techStack: [
+      { name: "Python", percentage: 20 },
+      { name: "Streamlit", percentage: 20 },
+      { name: "MongoDB", percentage: 20 },
+      { name: "OpenAI API", percentage: 15 },
+      { name: "Pandas", percentage: 15 },
+      { name: "NumPy", percentage: 10 },
+    ],
+    image: questionGenerator,
+    tags: [
+      "Python",
+      "Streamlit",
+      "MongoDB",
+      "OpenAI API",
+      "Pandas",
+      "NumPy",
+      "AI",
+      "EdTech",
+    ],
+    demoLink: "#",
+    githubLink: "#",
+    featured: false,
+  },
+
   // {
   //   id: 9,
   //   title: "Parallexus Multi-UI Platform",

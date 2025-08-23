@@ -12,7 +12,7 @@ import airbnb from "../assets/images/airbnb.png";
 import jrm from "../assets/images/jrm.png";
 import planner from "../assets/images/planner.png";
 import questionGenerator from "../assets/images/questionGenerator.png";
-// import bilva from "../assets/images/Bilva-ss.png";
+import traveller from "../assets/images/traveller.png";
 interface Project {
   id: number;
   title: string;
@@ -127,7 +127,7 @@ const projects: Project[] = [
       "Nodemailer",
     ],
     demoLink: "https://arc-woad-kappa.vercel.app/home",
-    githubLink: "#",
+    githubLink: "https://github.com/Saxena-Shivam/ARC_Task",
     featured: false,
   },
   {
@@ -170,7 +170,7 @@ const projects: Project[] = [
     ],
     demoLink:
       "https://aashish-kumar-singh1-git-master-hello-college.vercel.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/Saxena-Shivam/ByteVerse",
     featured: false,
   },
 
@@ -217,8 +217,9 @@ const projects: Project[] = [
     ],
     image: airbnb,
     tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "JWT", "bcrypt.js"],
-    demoLink: "#",
-    githubLink: "#",
+    demoLink:
+      "https://www.loom.com/share/69e6039b54064dce9c9cbae36d8fa284?sid=20465b95-aa42-4bb5-b28f-a53d6d08ce2b",
+    githubLink: "https://github.com/Saxena-Shivam/airbnb",
     featured: false,
   },
   {
@@ -258,8 +259,8 @@ const projects: Project[] = [
       "MySQL",
       "AJAX",
     ],
-    demoLink: "#",
-    githubLink: "#",
+    demoLink: "https://jrm-rso.in",
+    githubLink: "https://github.com/Saxena-Shivam/jrm",
     featured: false,
   },
   {
@@ -299,7 +300,7 @@ const projects: Project[] = [
       "Education Tech",
     ],
     demoLink: "https://study-planner-typescript.vercel.app/",
-    githubLink: "#",
+    githubLink: "https://github.com/Saxena-Shivam/personalised_study",
     featured: false,
   },
   {
@@ -339,8 +340,8 @@ const projects: Project[] = [
       "AI",
       "EdTech",
     ],
-    demoLink: "#",
-    githubLink: "#",
+    demoLink: "https://questions-generator-lilac.vercel.app/",
+    githubLink: "https://github.com/Saxena-Shivam/question-generator",
     featured: false,
   },
 

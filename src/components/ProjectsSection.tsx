@@ -314,8 +314,6 @@ const projects: Project[] = [
       "Integrated GitHub profile view for showcasing repositories",
       "Customizable layout for a personalized user experience",
       "Lightweight and optimized for fast load times",
-    ],
-    mobileFeatures: [
       "Touch-friendly window dragging and resizing",
       "Optimized layout for smaller screens",
       "Mobile navigation with quick access to apps",

@@ -18,7 +18,7 @@ export default function AboutSection() {
     // },
     {
       title: "Part-time Developer",
-      company: "AcadSync",
+      company: "AcadSync Pvt Ltd",
       period: "May 2025 - July 2025",
       icon: <Code className="h-5 w-5" />,
       description:
@@ -28,19 +28,19 @@ export default function AboutSection() {
     {
       title: "Electrical Engineering",
       company: "Indian Institute of Technology, Bhubaneswar",
-      period: "2025 - 2028",
+      period: "2024 - 2028",
       icon: <GraduationCap className="h-5 w-5" />,
       description: "Started a new journey with new challenges.",
       type: "education",
     },
-    {
-      title: "Computer Science Engineering",
-      company: "National Institute of Technology, Patna",
-      period: "2024 - 2025",
-      icon: <GraduationCap className="h-5 w-5" />,
-      description: "A start to my career in technology and engineering.",
-      type: "education",
-    },
+    // {
+    //   title: "Computer Science Engineering",
+    //   company: "National Institute of Technology, Patna",
+    //   period: "2023 - 2024",
+    //   icon: <GraduationCap className="h-5 w-5" />,
+    //   description: "A start to my career in technology and engineering.",
+    //   type: "education",
+    // },
   ];
 
   return (
@@ -64,27 +64,25 @@ export default function AboutSection() {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I’m an undergraduate student at IIT Bhubaneswar pursuing
-              Electrical Engineering. I started my programming journey with C
-              and C++, where I discovered my love for algorithms and data
-              structures. As I grew, web development became my next big
-              passion—I explored JavaScript, backend technologies like Node.js,
-              and built responsive, user-friendly websites using Bootstrap and
-              Express.js.
+              I’m an undergraduate student at IIT Bhubaneswar, pursuing
+              Electrical Engineering. My programming journey began with C and
+              C++, where I developed a strong interest in problem-solving and
+              algorithms. Over time, my curiosity led me to web development,
+              where I explored JavaScript, backend development with Node.js and
+              Express.js, and building responsive, user-friendly websites using
+              Tailwind, MongoDB, and SQL.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Later, I ventured into AI-powered projects, creating solutions
-              such as automated question paper generators, personalized study
-              planners, and AI-based answer checkers, as well as adaptive
-              learning systems leveraging real student performance data. These
-              experiences strengthened my skills in Python, MongoDB, Streamlit,
-              and AI APIs, and fueled my goal of solving real-world challenges
-              through technology.
+              As I grew, I expanded my skills by working on AI-powered projects,
+              gaining experience with Python, MongoDB, Streamlit, LLMs, RAG,
+              Hugging Face, and LangChain, which enabled me to design practical,
+              intelligent solutions that bridge technology with real-world
+              applications.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new design trends,
-              contributing to open source projects, or enjoying outdoor
-              activities.
+              Beyond coding, I love immersing myself in music and staying active
+              by playing volleyball and cricket, which keep me refreshed and
+              inspired.
             </p>
 
             <div className="pt-6">

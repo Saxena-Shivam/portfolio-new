@@ -12,7 +12,7 @@ import airbnb from "../assets/images/airbnb.png";
 import jrm from "../assets/images/jrm.png";
 import planner from "../assets/images/planner.png";
 import questionGenerator from "../assets/images/questionGenerator.png";
-import traveller from "../assets/images/traveller.png";
+import windowos from "../assets/images/image.png";
 interface Project {
   id: number;
   title: string;
@@ -47,14 +47,20 @@ const projects: Project[] = [
       "Student, teacher, and admin portals for easy management",
     ],
     techStack: [
-      { name: "TypeScript", percentage: 30 },
-      { name: "MongoDB", percentage: 25 },
-      { name: "Streamlit", percentage: 20 },
-      { name: "Python", percentage: 15 },
-      { name: "AI APIs", percentage: 10 },
+      { name: "TypeScript", percentage: 70 },
+      { name: "MongoDB", percentage: 15 },
+      { name: "Python", percentage: 10 },
+      { name: "Vite", percentage: 30 },
+      { name: "Node.js", percentage: 25 },
+      { name: "Tailwind CSS", percentage: 15 },
+      { name: "OpenAI API", percentage: 20 },
+      { name: "Hugging Face", percentage: 5 },
+      { name: "LangChain", percentage: 5 },
+      { name: "Framer Motion", percentage: 10 },
+      { name: "AI APIs", percentage: 5 },
     ],
     image: acadsync,
-    tags: ["TypeScript", "MongoDB", "Streamlit", "Python", "AI APIs"],
+    tags: ["TypeScript", "MongoDB", "Python", "AI APIs", "Node.js", "Vite"],
     demoLink: "https://arc-front.onrender.com",
     githubLink: "#",
     featured: true,
@@ -81,14 +87,13 @@ const projects: Project[] = [
       "Sales analytics and promotional tools",
     ],
     techStack: [
-      { name: "React + Vite", percentage: 35 },
+      { name: "React + Vite (JavaScript)", percentage: 40 },
       { name: "Flask (Python)", percentage: 30 },
       { name: "PostgreSQL", percentage: 20 },
       { name: "SQLite", percentage: 10 },
-      { name: "JWT Authentication", percentage: 5 },
     ],
     image: grocto,
-    tags: ["React", "Vite", "Flask", "PostgreSQL", "SQLite", "JWT"],
+    tags: ["React", "JavaScript", "Vite", "Flask", "PostgreSQL", "SQLite"],
     demoLink: "https://grocto-frontend.onrender.com/",
     githubLink: "#",
     featured: true,
@@ -111,20 +116,23 @@ const projects: Project[] = [
       "Toast notifications for user actions (success/error feedback)",
     ],
     techStack: [
-      { name: "React", percentage: 30 },
+      { name: "React (JavaScript)", percentage: 35 },
+      { name: "Socket.IO", percentage: 5 },
       { name: "Tailwind CSS", percentage: 15 },
-      { name: "Express.js", percentage: 25 },
+      { name: "Node.js", percentage: 25 },
       { name: "MongoDB", percentage: 20 },
-      { name: "Node-cron & Nodemailer", percentage: 10 },
+      { name: "Node-cron & Nodemailer", percentage: 5 },
+      { name: "Socket.IO", percentage: 5 },
     ],
     image: message_app,
     tags: [
+      "JavaScript",
       "React",
+      "Socket.IO",
       "Tailwind CSS",
       "Express.js",
       "MongoDB",
       "JWT",
-      "Nodemailer",
     ],
     demoLink: "https://arc-woad-kappa.vercel.app/home",
     githubLink: "https://github.com/Saxena-Shivam/ARC_Task",
@@ -148,42 +156,19 @@ const projects: Project[] = [
       "MySQL-based database management",
     ],
     techStack: [
-      { name: "Express.js", percentage: 20 },
-      { name: "Node.js", percentage: 20 },
-      { name: "AJAX", percentage: 10 },
-      { name: "MySQL", percentage: 20 },
-      { name: "JavaScript/jQuery", percentage: 15 },
-      { name: "Bootstrap/HTML/CSS", percentage: 15 },
+      { name: "JavaScript", percentage: 20 },
+      { name: "MySQL", percentage: 10 },
+      { name: "Bootstrap", percentage: 30 },
+      { name: "HTML", percentage: 20 },
+      { name: "CSS", percentage: 20 },
     ],
-
     image: college,
-    tags: [
-      "Express.js",
-      "Node.js",
-      "AJAX",
-      "MySQL",
-      "JavaScript",
-      "jQuery",
-      "Bootstrap",
-      "HTML",
-      "CSS",
-    ],
+    tags: ["JavaScript", "Node.js", "MySQL", "Bootstrap", "HTML", "CSS"],
     demoLink:
       "https://aashish-kumar-singh1-git-master-hello-college.vercel.app/",
     githubLink: "https://github.com/Saxena-Shivam/ByteVerse",
     featured: false,
   },
-
-  // {
-  //   id: 5,
-  //   title: "ARC School Portal",
-  //   description:
-  //     "ARC School Portal is a comprehensive educational management system designed to streamline administrative processes and enhance the learning experience for students, teachers, and parents. Built with modern web technologies, this platform provides a centralized hub for academic activities, communication, and resource management.",
-  //   image: arcPortal,
-  //   tags: ["React", "Tailwind CSS", "Shadcn UI", "3D Visualization"],
-  //   demoLink: "https://arc-school-portal.vercel.app/",
-  //   githubLink: "#",
-  // },
   {
     id: 5,
     title: "StayEase - Hotel & Property Booking Platform",
@@ -208,15 +193,14 @@ const projects: Project[] = [
       "Hotel booking with check-in/out dates and booking history",
     ],
     techStack: [
+      { name: "JavaScript", percentage: 30 },
       { name: "Node.js", percentage: 25 },
       { name: "Express.js", percentage: 20 },
-      { name: "MySQL", percentage: 20 },
-      { name: "Sequelize ORM", percentage: 15 },
-      { name: "JWT Authentication", percentage: 10 },
-      { name: "bcrypt.js", percentage: 10 },
+      { name: "JWT Authentication", percentage: 5 },
+      { name: "MySQL (Sequelize)", percentage: 15 },
     ],
     image: airbnb,
-    tags: ["Node.js", "Express.js", "MySQL", "Sequelize", "JWT", "bcrypt.js"],
+    tags: ["JavaScript", "Node.js", "Express.js", "MySQL", "Sequelize", "JWT"],
     demoLink:
       "https://www.loom.com/share/69e6039b54064dce9c9cbae36d8fa284?sid=20465b95-aa42-4bb5-b28f-a53d6d08ce2b",
     githubLink: "https://github.com/Saxena-Shivam/airbnb",
@@ -240,25 +224,13 @@ const projects: Project[] = [
       "Optional chatbot and voice search support",
     ],
     techStack: [
-      { name: "HTML/CSS/Bootstrap", percentage: 20 },
-      { name: "JavaScript/jQuery", percentage: 20 },
-      { name: "Express.js", percentage: 15 },
-      { name: "Node.js", percentage: 15 },
-      { name: "MySQL", percentage: 20 },
-      { name: "AJAX", percentage: 10 },
+      { name: "JavaScript", percentage: 80 },
+      { name: "HTML", percentage: 10 },
+      { name: "CSS", percentage: 10 },
+      { name: "Leaflet", percentage: 10 },
     ],
     image: jrm,
-    tags: [
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-      "jQuery",
-      "Express.js",
-      "Node.js",
-      "MySQL",
-      "AJAX",
-    ],
+    tags: ["JavaScript", "HTML", "CSS", "Leaflet"],
     demoLink: "https://jrm-rso.in",
     githubLink: "https://github.com/Saxena-Shivam/jrm",
     featured: false,
@@ -281,24 +253,16 @@ const projects: Project[] = [
       "Export and download options for offline use",
     ],
     techStack: [
-      { name: "Python", percentage: 20 },
-      { name: "Streamlit", percentage: 20 },
+      { name: "react.js", percentage: 30 },
+      { name: "JavaScript", percentage: 20 },
       { name: "MongoDB", percentage: 20 },
       { name: "OpenAI API", percentage: 15 },
-      { name: "Pandas", percentage: 15 },
-      { name: "NumPy", percentage: 10 },
+      { name: "Python", percentage: 10 },
+      { name: "Hugging Face", percentage: 5 },
+      { name: "LangChain", percentage: 5 },
     ],
     image: planner,
-    tags: [
-      "Python",
-      "Streamlit",
-      "MongoDB",
-      "OpenAI API",
-      "Pandas",
-      "NumPy",
-      "AI",
-      "Education Tech",
-    ],
+    tags: ["Python", "JavaScript", "MongoDB", "OpenAI API", "AI"],
     demoLink: "https://study-planner-typescript.vercel.app/",
     githubLink: "https://github.com/Saxena-Shivam/personalised_study",
     featured: false,
@@ -322,49 +286,55 @@ const projects: Project[] = [
       "Error handling and stable model integration",
     ],
     techStack: [
-      { name: "Python", percentage: 20 },
-      { name: "Streamlit", percentage: 20 },
+      { name: "Python", percentage: 30 },
+      { name: "JavaScript", percentage: 20 },
       { name: "MongoDB", percentage: 20 },
       { name: "OpenAI API", percentage: 15 },
-      { name: "Pandas", percentage: 15 },
-      { name: "NumPy", percentage: 10 },
+      { name: "Hugging Face", percentage: 5 },
+      { name: "LangChain", percentage: 5 },
     ],
     image: questionGenerator,
-    tags: [
-      "Python",
-      "Streamlit",
-      "MongoDB",
-      "OpenAI API",
-      "Pandas",
-      "NumPy",
-      "AI",
-      "EdTech",
-    ],
+    tags: ["Python", "JavaScript", "MongoDB", "OpenAI API", "AI"],
     demoLink: "https://questions-generator-lilac.vercel.app/",
     githubLink: "https://github.com/Saxena-Shivam/question-generator",
     featured: false,
   },
-
-  // {
-  //   id: 9,
-  //   title: "Parallexus Multi-UI Platform",
-  //   description:
-  //     "A showcase platform featuring multiple different UI interfaces with innovative design patterns and interactive features.",
-  //   image: parallexus,
-  //   tags: ["React", "UI/UX", "API Integration", "Multi-theme"],
-  //   demoLink: "https://parallexus.netlify.app/",
-  //   githubLink: "#",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Bilva",
-  //   description:
-  //     "Built a website for Bilva, A startup based on climate change and sustainability",
-  //   image: bilva,
-  //   tags: ["React", "Tailwind CSS"],
-  //   demoLink: "https://bilva.vercel.app/",
-  //   githubLink: "#",
-  // },
+  {
+    id: 9,
+    title: "Interactive Window OS Design",
+    description:
+      "A web-based interactive desktop environment that simulates a modern OS, featuring multiple mini-apps like Contact, GitHub, Education, and Terminal within a single dynamic interface.",
+    longDescription:
+      "The Interactive Window OS Design is a creative web application that replicates the feel of a desktop operating system directly in the browser. The platform features draggable and resizable windows, smooth transitions, and app-based components, including Contact, GitHub integration, Education hub, and an interactive Terminal for simple commands. Built with a focus on clean design and user-friendly navigation, the project leverages React, TailwindCSS, and Framer Motion for seamless UI experiences. It showcases how modern web technologies can be combined to create a desktop-like interface for portfolio interaction or productivity tools. The app is also optimized for mobile devices, providing touch-based interactions and a clean responsive layout for smaller screens.",
+    features: [
+      "Draggable and resizable app windows for a desktop-like experience",
+      "Multiple apps including Contact, GitHub, Education Hub, and Terminal",
+      "Smooth animations and transitions using Framer Motion",
+      "Responsive design for both desktop and mobile users",
+      "Integrated GitHub profile view for showcasing repositories",
+      "Customizable layout for a personalized user experience",
+      "Lightweight and optimized for fast load times",
+    ],
+    mobileFeatures: [
+      "Touch-friendly window dragging and resizing",
+      "Optimized layout for smaller screens",
+      "Mobile navigation with quick access to apps",
+      "Smooth transitions and animations tailored for mobile",
+      "Lightweight loading for faster mobile performance",
+    ],
+    techStack: [
+      { name: "React", percentage: 35 },
+      { name: "TailwindCSS", percentage: 25 },
+      { name: "JavaScript", percentage: 20 },
+      { name: "Framer Motion", percentage: 10 },
+      { name: "Vercel", percentage: 10 },
+    ],
+    image: windowos, // replace with your project image variable
+    tags: ["React", "TailwindCSS", "JavaScript", "Framer Motion", "UI/UX"],
+    demoLink: "https://your-window-os-demo-link.vercel.app/",
+    githubLink: "https://github.com/Saxena-Shivam/window-os-design",
+    featured: false,
+  },
 ];
 
 // Filter featured projects
@@ -673,25 +643,19 @@ export default function ProjectsSection() {
 
             {project.techStack && (
               <div className="mb-6">
-                <h3 className="text-xl font-semibold mb-3">Technology Stack</h3>
-                <div className="space-y-3">
+                <h3 className="text-xl font-semibold mb-4">Tech Stack</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   {project.techStack.map((tech, index) => (
-                    <div key={index}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{tech.name}</span>
-                        <span className="text-sm text-foreground/70">
-                          {tech.percentage}%
-                        </span>
-                      </div>
-                      <div className="h-2 bg-secondary/30 rounded-full overflow-hidden">
-                        <motion.div
-                          className="h-full bg-primary"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${tech.percentage}%` }}
-                          transition={{ duration: 1, delay: index * 0.1 }}
-                        />
-                      </div>
-                    </div>
+                    <motion.div
+                      key={index}
+                      className="p-3 rounded-xl bg-secondary/30 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center text-sm font-medium"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: index * 0.1 }}
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      {tech.name}
+                    </motion.div>
                   ))}
                 </div>
               </div>

@@ -27,6 +27,8 @@ import {
   SiExpress,
   SiMysql,
   SiReactivex,
+  SiLaunchpad,
+  SiLangchain,
 } from "react-icons/si";
 import profileImage from "../assets/images/profile1.jpg";
 
@@ -64,7 +66,7 @@ export default function HeroSection() {
     { name: "C++", icon: <SiCplusplus className="h-6 w-6" /> },
     { name: "C", icon: <SiC className="h-6 w-6" /> },
     { name: "JavaScript", icon: <SiJavascript className="h-6 w-6" /> },
-    { name: "Reactivex", icon: <SiReactivex className="h-6 w-6" /> },
+    { name: "LangChain", icon: <SiLangchain className="h-6 w-6" /> },
     { name: "Express", icon: <SiExpress className="h-6 w-6" /> },
     { name: "MySQL", icon: <SiMysql className="h-6 w-6" /> },
   ];
@@ -292,11 +294,10 @@ export default function HeroSection() {
               <div className="rounded-full bg-primary/10 p-2 text-primary">
                 <GraduationCap className="h-5 w-5" />
               </div>
-              <h3 className="text-lg font-semibold">Machine Learning</h3>
+              <h3 className="text-lg font-semibold">Education</h3>
             </div>
             <p className="text-foreground/70 text-sm relative z-10">
-              Exploring the intersection of computer science and artificial
-              intelligence.
+              Pursuing a degree in Electrical Engineering at IIT Bhubaneswar.
             </p>
           </motion.div>
         </div>

@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Professional Developer & Designer</title>
+    <meta
+      name="description"
+      content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience."
+    />
+    <meta name="author" content="Developer" />
+    <meta
+      name="keywords"
+      content="portfolio, web developer, fullstack developer, designer, creative professional, projects"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio | Professional Developer & Designer</title>
-  <meta name="description"
-    content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience." />
-  <meta name="author" content="Developer" />
-  <meta name="keywords"
-    content="portfolio, web developer, fullstack developer, designer, creative professional, projects" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akhilportolio.vercel.app/" />
+    <meta
+      property="og:title"
+      content="My Portfolio | Professional Developer & Designer"
+    />
+    <meta
+      property="og:description"
+      content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png"
+    />
+    <meta property="og:image:alt" content="Portfolio preview" />
+    <meta property="og:site_name" content="My Portfolio" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://akhilportolio.vercel.app/" />
-  <meta property="og:title" content="My Portfolio | Professional Developer & Designer" />
-  <meta property="og:description"
-    content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience." />
-  <meta property="og:image"
-    content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png" />
-  <meta property="og:image:alt" content="Portfolio preview" />
-  <meta property="og:site_name" content="My Portfolio" />
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png"
+    />
+    <meta name="twitter:site" content="Akhil" />
+    <meta
+      name="twitter:title"
+      content="My Portfolio | Professional Developer & Designer"
+    />
+    <meta
+      name="twitter:description"
+      content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png"
+    />
+    <meta name="twitter:image:alt" content="Portfolio preview" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card"
-    content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png" />
-  <meta name="twitter:site" content="Akhil" />
-  <meta name="twitter:title" content="My Portfolio | Professional Developer & Designer" />
-  <meta name="twitter:description"
-    content="Welcome to my professional portfolio showcasing my work in web development, design, and creative projects. Explore my latest works and professional experience." />
-  <meta name="twitter:image"
-    content="https://cdn.prod.website-files.com/6724e8c2371a456c6ffa4031/67f78a7bd409be0d430487ee_portfolioimg.png" />
-  <meta name="twitter:image:alt" content="Portfolio preview" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="canonical" href="https://akhilportolio.vercel.app/" />
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Akhil",
-      "url": "https://akhilportolio.vercel.app/",
-      "image": "https://akhilportolio.vercel.app/portfolioimg.png",
-      "sameAs": [
-        "https://x.com/akhifry"
-      ],
-      "jobTitle": "Professional Developer & Designer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Self-employed"
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="canonical" href="https://akhilportolio.vercel.app/" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://img.icons8.com/fluency/48/briefcase.png"
+    />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Akhil",
+        "url": "https://akhilportolio.vercel.app/",
+        "image": "https://akhilportolio.vercel.app/portfolioimg.png",
+        "sameAs": ["https://x.com/akhifry"],
+        "jobTitle": "Professional Developer & Designer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Self-employed"
+        }
       }
-    }
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <div id="root"></div>
-  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -75,25 +75,18 @@ export default function HeroSection() {
   const fullText = "Shivam Saxena";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
-    if (isTyping) {
-      if (currentIndex < fullText.length) {
-        const timeout = setTimeout(() => {
-          setDisplayText((prev) => prev + fullText[currentIndex]);
-          setCurrentIndex((prev) => prev + 1);
-        }, 150);
-        return () => clearTimeout(timeout);
-      } else {
-        setIsTyping(false);
-      }
-    } else {
+    if (isTyping && currentIndex < fullText.length) {
       const timeout = setTimeout(() => {
-        setIsTyping(true);
-        setDisplayText("");
-        setCurrentIndex(0);
-      }, 3000);
+        setDisplayText((prev) => prev + fullText[currentIndex]);
+        setCurrentIndex((prev) => prev + 1);
+      }, 150);
       return () => clearTimeout(timeout);
+    } else if (isTyping && currentIndex === fullText.length) {
+      setIsTyping(false);
+      setShowCursor(false); // Hide cursor after typing
     }
   }, [currentIndex, isTyping]);
 
@@ -147,7 +140,9 @@ export default function HeroSection() {
                 Hello, I'm{" "}
                 <span className="gradient-text relative inline-block">
                   {displayText}
-                  <span className="inline-block w-1 h-8 bg-primary ml-1 animate-blink" />
+                  {showCursor && (
+                    <span className="inline-block w-1 h-8 bg-primary ml-1 animate-blink" />
+                  )}
                 </span>
               </h1>
               <h2 className="text-xl md:text-2xl text-foreground/80 mb-6">

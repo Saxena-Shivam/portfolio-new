@@ -331,8 +331,8 @@ const projects: Project[] = [
     ],
     image: windowos, // replace with your project image variable
     tags: ["React", "TailwindCSS", "JavaScript", "Framer Motion", "UI/UX"],
-    demoLink: "https://your-window-os-demo-link.vercel.app/",
-    githubLink: "https://github.com/Saxena-Shivam/window-os-design",
+    demoLink: "https://shivam-portfolio-black-three.vercel.app/",
+    githubLink: "https://github.com/Saxena-Shivam/",
     featured: false,
   },
 ];
